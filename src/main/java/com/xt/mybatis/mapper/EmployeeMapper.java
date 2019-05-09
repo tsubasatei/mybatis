@@ -1,6 +1,7 @@
 package com.xt.mybatis.mapper;
 
 import com.xt.mybatis.bean.Employee;
+import com.xt.mybatis.bean.OraclePage;
 import org.apache.ibatis.annotations.MapKey;
 import org.apache.ibatis.annotations.Param;
 
@@ -30,4 +31,6 @@ public interface EmployeeMapper {
     void deleteEmp(Integer id);
 
     List<Employee> selectAll();
+
+    void getPageByProcedure(OraclePage page);
 }
